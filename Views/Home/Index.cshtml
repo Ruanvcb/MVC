@@ -1,0 +1,145 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page</title>
+    <style>
+        .form-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .form-wrapper form {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .button-wrapper {
+            position: fixed;
+            left: 50%;
+            bottom: 10%;
+            transform: translateX(-20%);
+            }
+            .button-wrapper button 
+            {
+                font-size: 24px;
+            }
+
+            /* Estilos personalizados para os botões dos formulários */
+        .form-wrapper button,
+        .form-wrapper input[type="button"]
+        {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            .form-wrapper button:hover,
+            .form-wrapper input[type="button"]:hover {
+                background-color: #45a049;
+        }   
+</style>
+
+    </style>
+</head>
+
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Olá jogador</h1>
+        <p>Acesse op.gg para conferir as estatísticas dos Campeões: <a href="https://www.op.gg/">op.gg</a>.</p>
+    </div>
+    <br>
+
+    <div class="form-wrapper" align="center">
+        <form>
+            <option value="">MID</option>
+            <select>
+                <optgroup label="MID AD">
+                    <option value="MID">Zed</option>
+                    <option value="MID">Yasuo</option>
+                </optgroup>
+
+                <optgroup label="Mid AP">
+                    <option value="MID">Zoe</option>
+                    <option value="MID">Katarina</option>
+                </optgroup>
+            </select>
+        </form>
+
+        <form>
+            <option value="">TOP</option>
+            <select name="lane" required="lane">
+                <optgroup label="TOP AD">
+                    <option value="TOP">Darius</option>
+                    <option value="TOP">Garen</option>
+                </optgroup>
+
+                <optgroup label="TOP AP">
+                    <option value="TOP">Gwen</option>
+                    <option value="TOP">Brand</option>
+                </optgroup>
+            </select>
+        </form>
+
+        <form>
+            <option value="">ADC</option>
+            <select name="lane" required="lane">
+                <optgroup label="ADC AD">
+                    <option value="ADC">MF</option>
+                    <option value="ADC">Nilah</option>
+                </optgroup>
+
+                <optgroup label="ADC AP">
+                    <option value="ADC">Lucian</option>
+                    <option value="ADC">Senna</option>
+                </optgroup>
+            </select>
+        </form>
+
+        <form>
+            <option value="">Support</option>
+            <select name="lane" required="lane">
+                <optgroup label="Sup AD">
+                    <option value="Sup">Leona</option>
+                    <option value="Sup">Thresh</option>
+                </optgroup>
+
+                <optgroup label="Sup AP">
+                    <option value="Sup">Zyra</option>
+                    <option value="Sup">Morgana</option>
+                </optgroup>
+            </select>
+        </form>
+
+        <form>
+            <option value="">Jungler</option>
+            <select name="lane" required="lane">
+                <optgroup label="Jungler AD">
+                    <option value="JG">Viego</option>
+                    <option value="JG">Lee Sin</option>
+                </optgroup>
+
+                <optgroup label="Jungler AP">
+                    <option value="JG">Evelynn</option>
+                    <option value="JG">Morgana</option>
+                </optgroup>
+            </select>
+        </form>
+        
+    </div>
+
+    <div class="button-wrapper">
+        <input type="button" onclick="alert('Você perdeu! Mesmo ganhando, você também perde.')" value="Jogar" style="font-size:24px;">
+
+        </div>
+        
+    </div>
+
+</body>
